@@ -1,0 +1,57 @@
+
+// This is variable scss file. Define some variables that you could use in project later
+
+
+// Import color file here
+
+
+@import 'colors';
+
+
+
+// Define variable for fonts that will be used in project
+
+$primary_font: 'Poppins', sans-serif;
+
+$secondary_font:'Spectral SC', serif;
+
+$line-height:1.5;
+
+$line-height-for-heading:1.2;
+
+$font-weight-for-heading:600;
+
+$default_font_weight:normal;
+
+
+
+// Define variables for color that will be used in project
+
+
+$primary_color:#222222;
+
+$secondary_color:#F95100;
+
+$primary_grey:#010101;
+
+$highlighter:#e0e0e0;
+
+$meta_color:#b1b1b1;
+
+$image_highlighter:#eee;
+
+$footer_top_color:#111111;
+
+$footer_text_color:#bbb;
+
+$footer_link_color:$white;
+
+$border_color: #eee;
+
+$dim_white: rgba(255,255,255,.6);
+
+
+
+
+
+

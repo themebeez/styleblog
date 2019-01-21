@@ -1,0 +1,99 @@
+
+// Pre-define for typography in project
+
+.container {
+
+    background: $white;
+}
+
+
+footer .container {
+
+    background:transparent;
+}
+
+body {
+
+	line-height: $line-height;
+	font-family: $primary_font;
+	font-size:16px;
+	font-weight:$default_font_weight;
+    color:$primary_color;
+    letter-spacing:0.15px;
+}
+
+li {
+
+	list-style: none;
+}
+
+img {
+
+	max-width:100%;
+    vertical-align:middle;
+}
+
+a {
+	text-decoration:none !important;
+    color:$primary_color;
+    @include transation_delay();
+}
+
+a:hover {
+
+    color:$secondary_color;
+}
+
+.mask,
+.mask-moderate {
+
+    @include mask();
+    @include transation_delay();
+}
+
+
+.footer-mask {
+
+	position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+} 
+
+// Pre-define for other classes
+
+.swiper-button-next,
+.swiper-button-prev {
+    
+    width: 20px;
+    height: 27px;
+    margin-top: 0;
+    background-size: 20px 27px;
+}
+
+.swiper-button-prev.swiper-button-white, .swiper-container-rtl .swiper-button-next.swiper-button-white {
+
+    background-image:url(../img/icons/back-arrow-circular-symbol.svg);
+
+}
+
+.swiper-button-next.swiper-button-white, .swiper-container-rtl .swiper-button-prev.swiper-button-white {
+
+    background-image:url(../img/icons/right-arrow-circular-button.svg);
+}
+
+
+// Fixed owl carousel scroll at touch devices
+
+.owl-carousel .owl-stage, 
+.owl-carousel.owl-drag .owl-item{
+    -ms-touch-action: auto;
+        touch-action: auto;
+}
+
+

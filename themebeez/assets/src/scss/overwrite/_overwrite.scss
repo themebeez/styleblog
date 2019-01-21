@@ -1,0 +1,28 @@
+
+// This is overwrite scss file were we set our styles to overwrite the framework styles
+
+
+
+// Might be you wana do something with .container class too
+
+.container {
+
+	max-width: 100%;
+}
+
+
+// Kill framework auto margin
+
+h1,h2,h3,h4,h5,h6,strong,p,form,span {
+
+	margin:0;
+	padding:0;
+}
+
+ol:before, 
+ul:before {
+
+	content:'';
+	margin:0;
+	padding:0;
+}
